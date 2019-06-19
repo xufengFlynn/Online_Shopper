@@ -1,0 +1,83 @@
+<% if notice %>
+  <p id="notice"><%= notice %></p>
+<% end %>
+
+<div style="height: 50px; width: 100%; background-color: #394449;">
+<h1 style="color:#ffffff;">Product Catalog</h1>
+</div>
+<!--<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">-->
+<div id="columns">
+
+  <div id="side">
+    <div id='cart'>
+      <%= render @cart %>
+    </div>
+    <ul>
+      <li><a href="/shopper/index">Home</a></li>
+      <li><a href="https://www.nintendo.com/whatsnew/#all">What's New?</a></li>
+      <li><a href="https://www.nintendo.com/consumer/index.jsp">Customer Support</a></li>
+
+
+    </ul>
+    <% if session[:user_id] %>
+      Hello, <%= User.find_by(id: session[:user_id]).name%>
+      <ul>
+        <li><%= link_to 'Orders',orders_path %></li>
+        <li><%= link_to 'Products', products_path %></li>
+        <li><%= link_to 'Users',    users_path    %></li>
+      </ul>
+      <%= button_to 'Logout', logout_path%>
+      <% else %>
+      <%= button_to 'Login', login_path, class:"btn btn-primary"%>
+    <% end %>
+  </div>
+
+  <div id="main">
+    <table>
+      <tbody id="myTable">
+        <% @products.each do |product| %>
+      <tr class="entry">
+<!--          <div class="entry">-->
+        <td style="width: 180px;"><%= image_tag(product.image, style: "width: 100%;") %></td>
+        <td>
+            <h3 id="name"><%= product.name %></h3>
+            <div class="price_line">
+              <%= sanitize(product.description) %>
+            </div>
+            <div class="price_line" style="overflow: auto;">
+              <br />
+              <span class="price">
+                <%= number_to_currency(product.price) %>
+              </span>
+              <%= button_to'Add to Cart', lineitems_path(product_id: product), class: 'add_to_cart btn btn-primary', remote: true%>
+            </div>
+        </td>
+<!--          </div>-->
+      </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+    function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[1].getElementsByTagName("h3");
+            // console.log(td)
+            if (td) {
+                txtValue = td["name"].innerHTML
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
