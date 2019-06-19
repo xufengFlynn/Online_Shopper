@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e66a4906-93e7-413b-8b24-902318071c00" name="Default Changelist" comment="" />
+    <list default="true" id="e66a4906-93e7-413b-8b24-902318071c00" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/log/" />
@@ -21,7 +23,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/shopper/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
+            <state relative-caret-position="855">
               <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
             </state>
           </provider>
@@ -193,49 +195,8 @@
     </navigator>
     <panes>
       <pane id="RailsProjectView" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Shopper- Xufeng Zhang(2014443532)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shopper- Xufeng Zhang(2014443532)" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Shopper- Xufeng Zhang(2014443532)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shopper- Xufeng Zhang(2014443532)" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Shopper- Xufeng Zhang(2014443532)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shopper- Xufeng Zhang(2014443532)" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Shopper- Xufeng Zhang(2014443532)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shopper- Xufeng Zhang(2014443532)" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Shopper- Xufeng Zhang(2014443532)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shopper- Xufeng Zhang(2014443532)" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Shopper- Xufeng Zhang(2014443532)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shopper- Xufeng Zhang(2014443532)" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="shopper" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -378,22 +339,22 @@
       <workItem from="1560378519449" duration="143000" />
       <workItem from="1560381584068" duration="228000" />
       <workItem from="1560966209721" duration="424000" />
+      <workItem from="1560968125108" duration="846000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69537000" />
+    <option name="totallyTimeSpent" value="70383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.13003664" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.13125764" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.4993895" weight="0.32959184" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.498779" visible="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.502442" side_tool="true" visible="true" weight="0.32959184" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.501221" side_tool="true" visible="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
@@ -646,7 +607,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shopper/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
+        <state relative-caret-position="855">
           <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
         </state>
       </provider>
